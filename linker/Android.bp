@@ -100,11 +100,9 @@ cc_binary {
     ],
 
     product_variables: {
-        gzosp: {
-            needs_text_relocations: {
-                cppflags: ["-DTARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS"],
-            },
-        }
+        needs_text_relocations: {
+            cppflags: ["-DTARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS"],
+        },
     },
 
     cppflags: ["-Wold-style-cast"],
